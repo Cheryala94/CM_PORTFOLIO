@@ -18,15 +18,16 @@ const Navbar = () => {
           className="flex items-center"
           onClick={() => { setActive(""); window.scrollTo(0, 0); }}
         >
-          <img src={CM} alt="logo" className="w-9 h-9 object-contain" />
-        </Link>
-
-        <p className="text-white text-[19px] font-bold cursor-default">
+          <img src={CM} alt="logo"  className="w-14 h-14 object-contain mr-2" />
+          <p className="text-white text-[19px] font-bold">
           CHERYALA MADHU
           <span className="sm:block hidden text-[14px] font-bold cursor-default" style={{ color: "#915eff" }}>
             | LEARN, DEPLOY, EVOLVE
           </span>
         </p>
+        </Link>
+
+        
       </div>
 
 
