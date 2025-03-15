@@ -100,7 +100,7 @@ const Contact = () => {
               exit={{ opacity: 0, x: -10 }}
               transition={{ duration: 1 }} 
               className="absolute top-1/2 -translate-y-1/2 right-0 text-white px-3 rounded-md z-30 text-right leading-tight font-bold"
-              style={{ fontFamily: '"Goudy Old Style", serif', fontSize: "40px" }} 
+              style={{ fontFamily: '"Goudy Old Style", serif', fontSize: "30px" }} 
             >
               <motion.span
                 initial={{ opacity: 0 }}
@@ -115,7 +115,7 @@ const Contact = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 1.2 }}
               >
-                🕊️<span style={{ fontSize: "60px", color: "#915eff" }}>DISPATCHED...</span>
+                🕊️<span style={{ fontSize: "43px", color: "#915eff" }}>DISPATCHED...</span>
               </motion.span>
               <br />
               <motion.span
