@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="300"
+   height="300"
+   viewBox="0 0 100 100"
+   xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="50" r="30" fill="royalblue" />
+  <circle cx="60" cy="50" r="30" fill="crimson" />
+<text x="45" y="49" font-size="40" text-anchor="middle" fill="white">
+  CM
+  <tspan x="40" y="60" font-size="9">LEARN</tspan>
+  <tspan x="55" y="69" font-size="9">DEPLOY</tspan>
+  <tspan x="63" y="79" font-size="9">EVOLVE</tspan>
+</text></svg>
