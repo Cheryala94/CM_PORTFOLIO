@@ -24,7 +24,7 @@ const Languages = [
 
 const education = [
     { name: 'Bachelors from Sathyabama University, Chennai', logo: sathyabamaLogo, url: 'https://www.sathyabama.ac.in/' },
-    { name: 'Masters from Riga Technical University, Riga, Latvia', logo: rtuLogo, url: 'https://www.rtu.lv/' }
+    // { name: 'Masters from Riga Technical University, Riga, Latvia', logo: rtuLogo, url: 'https://www.rtu.lv/' }
 ];
 
 const Profile = () => {

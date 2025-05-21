@@ -115,26 +115,13 @@ import {
   
   const experiences = [
     {
-      title: "Front-End Developer",
-      company_name: "Freelancer",
-      icon: Freelancer,
+      title: "Senior Software Engineer",
+      company_name: "PureSoftware [A Happiest Minds Company]",
+      icon: PureSoftware,
       iconBg: "#E6DEDD",
-      date: "Sep 2020 - Feb 2023",
+      date: "Oct. 03, 2024 - Present",
       points: [
-        "Build dynamic and responsive single-page applications using HTML, CSS, and JavaScript.",
-        "Work with clients to understand project needs and deliver solutions aligned with their business goals.",
-        "Optimize web page performance, ensure fast load times, and improve cross-browser compatibility.",
-        "Manage website deployment, troubleshoot issues, and maintain code for optimal functionality.",
-      ],
-    },
-    {
-      title: "Dot Net Full Stack Developer",
-      company_name: "CMS Computers Limited",
-      icon: CMS,
-      iconBg: "#E6DEDD",
-      date: "March 2023 - April 2024",
-      points: [
-        "Developing and maintaining a user-friendly government application interface to support entrepreneurs in starting small-scale industries.",
+        "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
@@ -145,7 +132,7 @@ import {
       company_name: "Streamline HEALTHCARE",
       icon: Streamline,
       iconBg: "#E6DEDD",
-      date: "Jan 2022 - Jan 2023",
+      date: "Apr. 22, 2024 - Sep. 27, 2024",
       points: [
         "Managed repositories using Git and Fork to ensure version control and efficient collaboration.",
         "Collaborated with clients to resolve bugs and address raised issues promptly.",
@@ -154,16 +141,29 @@ import {
       ],
     },
     {
-      title: "Senior Software Engineer",
-      company_name: "PureSoftware [A Happiest Minds Company]",
-      icon: PureSoftware,
+      title: "Dot Net Full Stack Developer",
+      company_name: "CMS Computers Limited",
+      icon: CMS,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Mar. 27, 2023 - Apr. 20, 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining a user-friendly government application interface to support entrepreneurs in starting small-scale industries.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    {
+      title: "Software Engineer",
+      company_name: "Kingston Info Solution Services Pvt. Ltd.",
+      icon: Freelancer,
+      iconBg: "#E6DEDD",
+      date: "Dec. 10, 2018 - Mar. 24, 2023",
+      points: [
+        "Build dynamic and responsive single-page applications using HTML, CSS, and JavaScript.",
+        "Work with clients to understand project needs and deliver solutions aligned with their business goals.",
+        "Optimize web page performance, ensure fast load times, and improve cross-browser compatibility.",
+        "Manage website deployment, troubleshoot issues, and maintain code for optimal functionality.",
       ],
     },
   ];
