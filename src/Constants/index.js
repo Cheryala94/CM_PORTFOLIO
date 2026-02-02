@@ -19,9 +19,12 @@ import {
     Freelancer,
     Streamline,
     PureSoftware,
+    Honeywell,
+    MAXPRO,
     CTMSMaster,
     TsIpass,
     SmartCare,
+    HarithaNidhi,
   } from "../assets";
   
   export const navLinks = [
@@ -32,6 +35,14 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "skills",
+      title: "Tech",
+    },
+    {
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "profile",
@@ -115,11 +126,24 @@ import {
   
   const experiences = [
     {
-      title: "Senior Software Engineer",
+      title: "Software Engineer II",
+      company_name: "Honeywell Technology Solutions",
+      icon: Honeywell,
+      iconBg: "#E6DEDD",
+      date: "Aug. 11, 2025 - Jan. 13, 2026",
+      points: [
+        "Designed, developed, and maintained scalable APIs that fetch data from multiple internal services, ensuring reliability and performance.",
+        "Led UI enhancements and executed SQL database schema and data modifications to align with evolving product needs.",
+        "Managed end-to-end service deployments using Octopus Deploy and built serverless solutions leveraging Azure Function Apps.",
+        "Worked closely with cross-functional teams and successfully delivered product feature demonstrations to international stakeholders and clients."
+      ],
+    },
+    {
+      title: "Software Engineer",
       company_name: "PureSoftware [A Happiest Minds Company]",
       icon: PureSoftware,
       iconBg: "#E6DEDD",
-      date: "Oct. 03, 2024 - Present",
+      date: "Oct. 03, 2024 - Aug. 05, 2025",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -128,7 +152,7 @@ import {
       ],
     },
     {
-      title: "DevOPS Engineer",
+      title: "Software Engineer",
       company_name: "Streamline HEALTHCARE",
       icon: Streamline,
       iconBg: "#E6DEDD",
@@ -153,19 +177,19 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "Software Engineer",
-      company_name: "Kingston Info Solution Services Pvt. Ltd.",
-      icon: Freelancer,
-      iconBg: "#E6DEDD",
-      date: "Dec. 10, 2018 - Mar. 24, 2023",
-      points: [
-        "Build dynamic and responsive single-page applications using HTML, CSS, and JavaScript.",
-        "Work with clients to understand project needs and deliver solutions aligned with their business goals.",
-        "Optimize web page performance, ensure fast load times, and improve cross-browser compatibility.",
-        "Manage website deployment, troubleshoot issues, and maintain code for optimal functionality.",
-      ],
-    },
+    // {
+    //   title: "Software Engineer",
+    //   company_name: "Kingston Info Solution Services Pvt. Ltd.",
+    //   icon: Freelancer,
+    //   iconBg: "#E6DEDD",
+    //   date: "Dec. 10, 2018 - Mar. 24, 2023",
+    //   points: [
+    //     "Build dynamic and responsive single-page applications using HTML, CSS, and JavaScript.",
+    //     "Work with clients to understand project needs and deliver solutions aligned with their business goals.",
+    //     "Optimize web page performance, ensure fast load times, and improve cross-browser compatibility.",
+    //     "Manage website deployment, troubleshoot issues, and maintain code for optimal functionality.",
+    //   ],
+    // },
   ];
   
   const testimonials = [
@@ -196,6 +220,26 @@ import {
   ];
   
   const projects = [
+    {
+      name: "MAXPRO Cloud",
+      description:
+        "Integrated cloud-based security management system that provides real-time access control and video surveillance to any mobile device, enabling on-the-go management of single or multiple buildings.",
+        tags: [
+        {
+          name: "KnockOut.Js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Function App",
+          color: "green-text-gradient",
+        },
+        {
+          name: "ServiceBus",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: MAXPRO,
+    },
     {
       name: "CTMS MASTER",
       description:
@@ -255,6 +299,26 @@ import {
         },
       ],
       image: TsIpass,
+    },
+    {
+      name: "HARITHA NIDHI",
+      description:
+        "Telangana Haritha Nidhi (Green Fund) in 2022 focused on sustaining the massive Telanganaku Harithaharam (greenery drive) by collecting a 1% contribution from principal employers.",
+      tags: [
+        {
+          name: "Asp.Net",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "WebForms",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MSSQL2019",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: HarithaNidhi,
     },
   ];
   

@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import WHATSAPPQR from "../assets/WHATSAPPQR.png";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,10 +17,14 @@ const Contact = () => {
   const [success, setSuccess] = useState(false);
   const [showSending, setShowSending] = useState(false);
 
+  const [mailCompleted, setMailCompleted] = useState(false);
+  const [showQRPopup, setShowQRPopup] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
     setErrors({ ...errors, [name]: false });
+    setMailCompleted(false);
   };
 
   const handleSubmit = (e) => {
@@ -61,12 +66,26 @@ const Contact = () => {
 
         setForm({ name: "", email: "", message: "" });
 
-        setTimeout(() => setSuccess(false), 3500); 
+        // setTimeout(() => setSuccess(false), 3500); 
+        setTimeout(() => {
+          setSuccess(false);        // animation ends
+          setMailCompleted(true);  // button becomes visible
+        }, 3500);
       })
       .catch(() => {
         setLoading(false);
         setShowSending(false);
       });
+  };
+
+  const handleWhatsAppClick = () => {
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      window.open("https://wa.link/m8d7ha", "_blank");
+    } else {
+      setShowQRPopup(true);
+    }
   };
 
   return (
@@ -191,15 +210,57 @@ const Contact = () => {
             </div>
           ))}
 
-          <div className="flex flex-col items-center">
+          <div className="flex items-center justify-center gap-4 mt-4">
+            {/* SEND BUTTON */}
             <motion.button
               type="submit"
-              className="bg-tertiary py-3 px-6 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl relative z-10"
+              className="bg-tertiary py-3 px-6 text-white font-bold rounded-xl"
               whileTap={{ scale: 0.9 }}
             >
               Send
             </motion.button>
+
+            {/* WHATSAPP BUTTON */}
+            {mailCompleted && !success && !showSending && (
+              <button
+                type="button"
+                onClick={handleWhatsAppClick}
+                className="bg-tertiary py-3 px-6 text-white font-bold rounded-xl
+                          flex items-center gap-2"
+              >
+                <i className="fa-brands fa-whatsapp text-xl text-green-400"></i>
+                <span>WHATSAPP ME</span>
+              </button>
+            )}
+
           </div>
+
+            {/* ================= QR POPUP MODAL ================= */}
+            {showQRPopup && (
+              <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70">
+                <div className="bg-black-100 rounded-2xl p-6 relative w-[600px] h-[600px] text-center">
+
+                  {/* CLOSE BUTTON */}
+                  <button
+                    onClick={() => setShowQRPopup(false)}
+                    className="absolute top-3 right-3 text-white text-xl font-bold"
+                  >
+                    ✕
+                  </button>
+
+                  <p className="text-white text-lg font-semibold mb-4">
+                    Scan to Connect on WhatsApp
+                  </p>
+
+                  <img
+                    src={WHATSAPPQR}
+                    alt="WhatsApp QR"
+                    className="w-[480px] h-[480px] mx-auto rounded-lg"
+                  />
+                </div>
+              </div>
+            )}
+
         </form>
       </motion.div>
 

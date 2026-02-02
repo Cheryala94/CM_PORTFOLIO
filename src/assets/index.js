@@ -24,10 +24,13 @@ import CMS from "./company/CMS.png";
 import Freelancer from "./company/Freelancer.png";
 import Streamline from "./company/Streamline.png";
 import PureSoftware from "./company/PureSoftware.png";
+import Honeywell from "./company/Honeywell.png";
 
+import MAXPRO from "./MaxPro.png";
 import CTMSMaster from "./CTMSMASTER.png";
 import SmartCare from "./SmartCare.png";
 import TsIpass from "./TSIPASS.png";
+import HarithaNidhi from "./HarithaNidhi.png";
 
 export {
   CM,
@@ -57,4 +60,7 @@ export {
   SmartCare,
   CMS,
   Freelancer,
+  Honeywell,
+  MAXPRO,
+  HarithaNidhi,
 };

@@ -61,7 +61,7 @@ const Works = () => {
     <>
       <motion.div variants = {textVariant()}>
           <p className={styles.sectionSubText} style={{ userSelect: 'none' }}> 
-                My Works</p>
+                My Real-World Implementations</p>
                 <h2 className={styles.sectionHeadText} style={{ userSelect: 'none' }}>
                   Projects</h2>
         </motion.div>
@@ -85,4 +85,4 @@ const Works = () => {
   )
 }
 
-export default SectionWrapper(Works,'');
+export default SectionWrapper(Works,'projects');

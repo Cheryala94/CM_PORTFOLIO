@@ -4,7 +4,7 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import profilePic from '../assets/ProfilePic.jpg';
 import sathyabamaLogo from '../assets/Sathyabama.png';
-import rtuLogo from '../assets/rtu.png';
+// import rtuLogo from '../assets/rtu.png';
 import { FaLinkedin } from "react-icons/fa";
 
 const hobbies = [
@@ -19,7 +19,7 @@ const Languages = [
     { name: 'Hindi', icon: 'अ' },
     { name: 'Tamil', icon: 'அ' },
     { name: 'English', icon: 'A' },
-    { name: 'Russian', icon: 'Б' },
+    // { name: 'Russian', icon: 'Б' },
 ];
 
 const education = [
@@ -80,7 +80,7 @@ const Profile = () => {
           ))}
         </div>
         <p className="mt-6 font-bold cursor-default" style={{ fontSize: '32px', color: '#915eff'  }}>Languages Fueling My Journey</p>
-        <div className='mt-6 grid grid-cols-2 sm:grid-cols-5 gap-3 w-full'>
+        <div className='mt-5 grid grid-cols-2 sm:grid-cols-4 gap-3 w-full text-center'>
           {Languages.map((Languages, index) => (
             <motion.div
               key={index}
